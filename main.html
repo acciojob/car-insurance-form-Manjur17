@@ -11,44 +11,50 @@
     <script type="text/javascript" src="./script.js">
 </script>
 <form method="post">
-        <div><label for="name">Name</label>
-	        <input type="text" name="name" id="name" placeholder="Name" required>
-        </div><br>
-        <div><label for="email">Email</label>
+        <div>
+            <label for="name">Name*</label>
+            <input type="text" name="name" id="name" placeholder="Name" required>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
             <input type="email" name="email" id="email" placeholder="Email" required>
-        </div><br>
-        <div><label for="gender">Gender &nbsp; </label>
-            <input type="radio" name="gender" id="gender_m"  required>Male
-           <input type="radio" name="gender" id="gender_f" required>Female
-          <input type="radio" name="gender" id=" # gender_o" required>Other
-        </div><br>
+        </div>
+
+        <div>
+            <label for="gender">Gender &nbsp; </label>
+            <input type="radio" name="gender" id="gender_m" required>Male
+            <input type="radio" name="gender" id="gender_f" required>Female
+            <input type="radio" name="gender" id=" # gender_o" required>Other
+        </div>
+
         <div>
             <label for="cars">Car Brands</label>
             <select name="cars" id="cars" required>
-                <!--<option value="Select" selected>*select*</option>-->
-				<option value="" disabled selected hidden>--Please choose an option--</option>
+                <option value="" >--Please choose an option--</option>
                 <option value="BMW">BMW</option>
                 <option value="Audi">Audi</option>
                 <option value="Mercedez">Mercedez</option>
             </select>
-        </div><br>
+        </div>
+
         <div>
             <label for="carage">Car Age</label>
             <input type="number" name="carage" id="carage" required>
-        </div><br>
+        </div>
+        
         <div>
             <label for="dop">Date of Purchase</label>
             <input type="date" name="dop" id="dop" required>
-        </div><br>
-		</div><br>
+        </div>
+
+        
         <div>
             <label for="password">Password</label>
             <input type="password" name="password" id="password" placeholder="Password" required>
-        </div><br>
-        
-        <!--<input type="submit" value="Submit">-->
-		<button type="submit">Submit</button>
-    </div>
+        </div>
+
+        <button type="submit">Submit</button>
     </form>
 </body>
 
